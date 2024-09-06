@@ -17,4 +17,4 @@ might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
-$f(n)\in O(g(n)) \iff \exists c, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
