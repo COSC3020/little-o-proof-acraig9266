@@ -21,6 +21,6 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 $f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
-Examining the definitions of O and o it can be seen the only difference is that o requires $\forall c > 0$ to be satisfied whereas O requires only that $\exists c > 0$ to be satisfied.
-So, let x be a randomly selected constant that satisfies the definition of o for some function f(n). Since x satisfies the definition of o, it must be positive (x > 0). Since x is a positive constant it satisfies $\exists c>0$ from the definition of O as x > 0. Since all other requirements for o and O are the same, all requirements are now met proving that $f(n)\in o(g(n))$ implies
+Examining the definitions of O and o it can be seen the only differences are that o requires $\forall c > 0$ to be satisfied whereas O requires only that $\exists c > 0$ to be satisfied and that o uses a strict inequality for f(n) < cg(n).
+So, let x be a randomly selected constant that satisfies f(n) < cg(n). Since x satisfies the definition of o, it must be positive (x > 0). Since x is a positive constant it satisfies $\exists c>=0$ from the definition of O as x > 0. Since all other requirements for o and O are the same, all requirements are now met proving that $f(n)\in o(g(n))$ implies
 that $f(n)\in O(g(n))$.
